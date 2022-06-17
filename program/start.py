@@ -58,11 +58,11 @@ async def _human_time_duration(seconds):
 
 @Client.on_message(command(["start", f"start@NKQBoT"]) & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
-        await message.reply_photo("https://telegra.ph/file/0c2b093b524a1ebc0c417.jpg", caption=f"""▪️ **أهـلا بك عزيزي ✋🏼**\n
+        await message.reply_photo("https://telegra.ph/file/8ac0a640e41521b74ee89.jpg", caption=f"""▪️ **أهـلا بك عزيزي ✋🏼**\n
 ▫️ **انا بوت تشغيل الموسيقى في المكالمات الصوتية 🔉** 
 
 ▪️ **يمكن اضافتي الى مجموعتك واستخدام الاوامر للتشغيل ❕*
-▫️ **اضغط على الاوامر في الاسفل 🔻\n▪️للستفسار ارسل رسالة هنا : @e1r_10.**
+▫️ **اضغط على الاوامر في الاسفل 🔻\n▪️للستفسار ارسل رسالة هنا : @ESXAN.**
 **—  —  —  —  —  —  —  —  —  —**
 """, 
             reply_markup=InlineKeyboardMarkup(
