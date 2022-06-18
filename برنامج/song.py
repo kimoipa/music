@@ -45,7 +45,7 @@ def songg(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("** ما لقيت اغنيه بهالعنوان\n✶ او انك ما كتبت اسم الاغنيه بشكل صحيح**")
+        m.edit("** ما لقيت اغنيه بهالعنوان\n او انك ما كتبت اسم الاغنيه بشكل صحيح**")
         print(str(e))
         return
     m.edit("** لقيت المطلوب ..**")
@@ -60,7 +60,7 @@ def songg(_, message):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
         m.edit("** جاري ارسال الملف الصوتي ..**")
-        buttons = [[InlineKeyboardButton("𝗌𝗈𝗎𝗋𝖼𝖾 𝗆as", url="t.me/S_T_Dl")]]
+        buttons = [[InlineKeyboardButton("𝗌𝗈𝗎𝗋𝖼𝖾 MisTiri", url="t.me/UX4SL")]]
         reply_markup = InlineKeyboardMarkup(buttons)
 
         message.reply_audio(
@@ -71,7 +71,7 @@ def songg(_, message):
             parse_mode="md",
             title=title,
             duration=dur,
-            performer="𝑴𝒊𝒓𝒂 𝑴𝒖𝒔𝒊𝒄 ♪"
+            performer="MisTiri ♪"
         )
         m.delete()
     except Exception as e:
