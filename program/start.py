@@ -56,7 +56,7 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command(["start", f"start@NKQBoT"]) & filters.private & ~filters.edited)
+@Client.on_message(command(["stagrt", f"start@NKQBoT"]) & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
         await message.reply_photo("https://telegra.ph/file/8ac0a640e41521b74ee89.jpg", caption=f"""▪️ **أهـلا بك عزيزي ✋🏼**\n
 ▫️ **انا بوت تشغيل الموسيقى في المكالمات الصوتية 🔉** 
@@ -124,7 +124,7 @@ async def cmd_(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("الاوامر", [".", ""]) & ~filters.edited)
+@Client.on_message(filters.command("العاوامر", [".", ""]) & ~filters.edited)
 async def ccx_(client: Client, message: Message):
     await message.reply_text(
         f"""**اهلين\n- هاذي الاوامر يا عزيزي**""",
@@ -153,7 +153,7 @@ async def ccx_(client: Client, message: Message):
 
     
     
-@Client.on_message(filters.command("السورس", [".", ""]) & ~filters.edited)
+@Client.on_message(filters.command("السلاورس", [".", ""]) & ~filters.edited)
 async def star_(client: Client, message: Message):
     await message.reply_photo("https://telegra.ph/file/2a570e5771e601de624bc.jpg", caption=f"""MisTiri .\n\n▹￤ لصنع مثل هذا البوت تواصل مع مطور السورس\n\n▹￤[قناة السورس](t.me/UX4SL)\n▹￤[تحديثات السورس](t.me/UX4SL)\n▹￤[مطور السورس](t.me/GZZZC)\n▹￤[مبرمج السورس](t.me/QVVV7)**""", 
         reply_markup=InlineKeyboardMarkup(
@@ -186,7 +186,7 @@ async def star_(client: Client, message: Message):
         ),
     )
 
-@Client.on_message(filters.command("المطور", [".", ""]) & ~filters.edited)
+@Client.on_message(filters.command("المتةطور", [".", ""]) & ~filters.edited)
 async def mtor_(client: Client, message: Message):
     await message.reply_photo("https://telegra.ph/file/9ccbd3fca127c985023e6.jpg", caption=f"""▹￤D𝐞𝐯 N𝐞𝐦𝐚 ↬ X : اسكانور\n▹￤D𝐞𝐯 U𝐬𝐞𝐫 ↬ @QVVV7\n▹￤D𝐞𝐯 I𝐝 ↬ ( 2036507188 )\n▹￤D𝐞𝐯 B𝐢𝐨  ..! @GZZZC**""", 
         reply_markup=InlineKeyboardMarkup(
@@ -218,14 +218,14 @@ async def mtor_(client: Client, message: Message):
             ]
         ),
     )
-# @Client.on_message(filters.command("ميرا", [".", ""]) & ~filters.edited)
+# @Client.on_message(filters.command("ميررا", [".", ""]) & ~filters.edited)
 # async def ivo(client: Client, message: Message):
 # m_reply = await message.reply_text(f"**لبيه {message.from_user.mention()}\n✯ اضغط /help عشان تشوف اوامري**")
 # await m_reply_text("")
 
 
 
-@Client.on_message(filters.regex("^كت$"))
+@Client.on_message(filters.regex("^كتةلت$"))
 def searchMusic(c, m):
     try:
         check_app = settingsApp.BotSettings()
