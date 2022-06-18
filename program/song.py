@@ -115,7 +115,7 @@ def song(_, message):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
         m.edit("** جاري ارسال الملف الصوتي ..**")
-        buttons = [[InlineKeyboardButton("𝗌𝗈𝗎𝗋𝖼𝖾 𝗆as", url="t.me/UX4SL")]]
+        buttons = [[InlineKeyboardButton("𝗌𝗈𝗎𝗋𝖼𝖾 MisTiri", url="t.me/UX4SL")]]
         reply_markup = InlineKeyboardMarkup(buttons)
 
         message.reply_audio(
@@ -126,7 +126,7 @@ def song(_, message):
             parse_mode="md",
             title=title,
             duration=dur,
-            performer="𝑴𝒊𝒓𝒂 𝑴𝒖𝒔𝒊𝒄 ♪"
+            performer="UX4SL ♪"
         )
         m.delete()
     except Exception as e:
